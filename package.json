@@ -1,9 +1,24 @@
 {
   "name": "expo-react-native-multiple-select",
   "version": "0.1.0",
+  "private": true,
   "description": "Simple multi-select component for expo. Inspired on react-native-multiple-select",
-  "main": "./lib/module/index.js",
-  "types": "./lib/typescript/src/index.d.ts",
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "homepage": "https://github.com/AugustoAleGon/expo-multiple-select#readme",
+  "bugs": {
+    "url": "https://github.com/AugustoAleGon/expo-multiple-select/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AugustoAleGon/expo-multiple-select.git"
+  },
+  "license": "MIT",
+  "author": "AugustoAleGon <augustogonzalez.dev@gmail.com> (https://github.com/AugustoAleGon)",
+  "type": "commonjs",
   "exports": {
     ".": {
       "source": "./src/index.tsx",
@@ -11,6 +26,12 @@
       "default": "./lib/module/index.js"
     },
     "./package.json": "./package.json"
+  },
+  "main": "./lib/module/index.js",
+  "types": "./lib/typescript/src/index.d.ts",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
   },
   "files": [
     "src",
@@ -31,6 +52,9 @@
     "!**/__mocks__",
     "!**/.*"
   ],
+  "workspaces": [
+    "example"
+  ],
   "scripts": {
     "example": "bun run --filter expo-react-native-multiple-select-example",
     "clean": "del-cli lib",
@@ -40,23 +64,8 @@
     "release": "release-it --only-version",
     "lint": "eslint \"**/*.{js,ts,tsx}\""
   },
-  "keywords": [
-    "react-native",
-    "ios",
-    "android"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AugustoAleGon/expo-multiple-select.git"
-  },
-  "author": "AugustoAleGon <augustogonzalez.dev@gmail.com> (https://github.com/AugustoAleGon)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AugustoAleGon/expo-multiple-select/issues"
-  },
-  "homepage": "https://github.com/AugustoAleGon/expo-multiple-select#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -93,10 +102,8 @@
     "react-native-builder-bob": "^0.40.18",
     "release-it": "^19.0.4",
     "turbo": "^2.5.6",
-    "typescript": "^5.9.2"
-  },
-  "dependencies": {
-    "@expo/vector-icons": "^14.0.0"
+    "typescript": "^5.9.2",
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "react": "*",
@@ -108,9 +115,9 @@
       "optional": true
     }
   },
-  "workspaces": [
-    "example"
-  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "packageManager": "bun@1.3.9",
   "react-native-builder-bob": {
     "source": "src",
