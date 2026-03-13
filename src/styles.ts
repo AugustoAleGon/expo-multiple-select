@@ -1,5 +1,5 @@
 /*!
- * expo-multiple-select
+ * expo-react-native-multiple-select
  * MIT Licensed
  */
 

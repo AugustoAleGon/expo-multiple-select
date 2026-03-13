@@ -1,5 +1,5 @@
 {
-  "name": "expo-multiple-select",
+  "name": "expo-react-native-multiple-select",
   "version": "0.1.0",
   "description": "Simple multi-select component for expo. Inspired on react-native-multiple-select",
   "main": "./lib/module/index.js",
@@ -32,7 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "bun run --filter expo-multiple-select-example",
+    "example": "bun run --filter expo-react-native-multiple-select-example",
     "clean": "del-cli lib",
     "prepare": "bob build",
     "typecheck": "tsc",

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text } from 'react-native';
-import MultiSelect from 'expo-multiple-select';
+import MultiSelect from 'expo-react-native-multiple-select';
 
 // --- Legacy-compatible usage (plain objects with _id/name) ---
 
@@ -68,7 +68,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.safe}>
       <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.title}>expo-multiple-select</Text>
+        <Text style={styles.title}>expo-react-native-multiple-select</Text>
 
         {/* Legacy-compatible multi-select */}
         <Text style={styles.heading}>Multi-select (legacy-compatible)</Text>
@@ -105,7 +105,11 @@ export default function App() {
           selectedItems={selectedWithIcons}
           onSelectedItemsChange={setSelectedWithIcons}
           selectText="Pick with custom icons"
-          renderIcon={(props) => (
+          renderIcon={(props: {
+            name: string;
+            size?: number;
+            color?: string;
+          }) => (
             <CustomIcon
               name={props.name}
               size={props.size}

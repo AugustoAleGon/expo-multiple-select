@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ExpoMultipleSelect Example",
-    "slug": "expo-multiple-select-example",
+    "slug": "expo-react-native-multiple-select-example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

@@ -1,11 +1,11 @@
-# expo-multiple-select
+# expo-react-native-multiple-select
 
 A multi-select component for React Native and Expo, rewritten in TypeScript. Inspired by [react-native-multiple-select](https://github.com/toystars/react-native-multiple-select).
 
 ## Installation
 
 ```sh
-npm install expo-multiple-select
+npm install expo-react-native-multiple-select
 ```
 
 ### Expo projects
@@ -32,7 +32,7 @@ You can skip both icon libraries entirely by providing your own icons via `IconC
 
 ```tsx
 import { useState } from 'react';
-import MultiSelect from 'expo-multiple-select';
+import MultiSelect from 'expo-react-native-multiple-select';
 
 const items = [
   { _id: '1', name: 'JavaScript' },
@@ -136,8 +136,8 @@ Override only the search icon:
 
 ```tsx
 import { useRef } from 'react';
-import MultiSelect from 'expo-multiple-select';
-import type { MultiSelectHandle } from 'expo-multiple-select';
+import MultiSelect from 'expo-react-native-multiple-select';
+import type { MultiSelectHandle } from 'expo-react-native-multiple-select';
 
 function MyComponent() {
   const ref = useRef<MultiSelectHandle>(null);
@@ -316,7 +316,7 @@ This package is a TypeScript rewrite of `react-native-multiple-select`. All lega
 
 ```diff
 - import MultiSelect from 'react-native-multiple-select';
-+ import MultiSelect from 'expo-multiple-select';
++ import MultiSelect from 'expo-react-native-multiple-select';
 ```
 
 If you were using `react-native-vector-icons` directly and are now on Expo, no other changes are needed -- icons resolve automatically.
@@ -325,7 +325,7 @@ If you were using `react-native-vector-icons` directly and are now on Expo, no o
 
 ```tsx
 // Default export
-import MultiSelect from 'expo-multiple-select';
+import MultiSelect from 'expo-react-native-multiple-select';
 
 // Named type exports
 import type {
@@ -334,10 +334,10 @@ import type {
   ItemType,
   IconAdapterProps,
   RenderIconFn,
-} from 'expo-multiple-select';
+} from 'expo-react-native-multiple-select';
 
 // Color pack (for matching component theme)
-import { colorPack } from 'expo-multiple-select';
+import { colorPack } from 'expo-react-native-multiple-select';
 ```
 
 ## Contributing

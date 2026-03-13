@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "expo-multiple-select": ["./src/index"]
+      "expo-react-native-multiple-select": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
