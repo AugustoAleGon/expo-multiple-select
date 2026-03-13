@@ -68,5 +68,4 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build example for Web
-        run: |
-          bun run example expo export --platform web
+        run: bun run example export:web
