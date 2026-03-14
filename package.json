@@ -61,6 +61,7 @@
     "typecheck": "tsc",
     "test": "jest",
     "release": "release-it --only-version",
+    "publish:npm": "bun run prepare && npm publish --access public",
     "lint": "eslint \"**/*.{js,ts,tsx}\""
   },
   "dependencies": {
