@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import MultiSelect from 'expo-react-native-multiple-select';
 
 // --- Legacy-compatible usage (plain objects with _id/name) ---
@@ -67,7 +68,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <ScrollView contentContainerStyle={styles.container}>
+      <View style={styles.container}>
         <Text style={styles.title}>expo-react-native-multiple-select</Text>
 
         {/* Legacy-compatible multi-select */}
@@ -117,7 +118,7 @@ export default function App() {
             />
           )}
         />
-      </ScrollView>
+      </View>
     </SafeAreaView>
   );
 }
