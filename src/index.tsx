@@ -365,8 +365,8 @@ function MultiSelectInner<T extends ItemType = ItemType>(
             <TouchableOpacity onPress={() => removeItem(item)}>
               {renderIconElement(
                 {
-                  name: 'close-circle',
-                  size: 22,
+                  name: 'close',
+                  size: 16,
                   color: tagRemoveIconColor,
                   style: { marginLeft: 10 },
                 },
